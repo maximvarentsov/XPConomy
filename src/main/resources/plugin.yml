@@ -1,0 +1,6 @@
+author: Agnate
+description: EconomyXP uses Experience as an Economy system.
+main: ca.agnate.EconXP.EconXP
+name: EconXP
+startup: postworld
+version: 0.5.0
