@@ -2,5 +2,5 @@ author: Maxim Varentsov <admin@gtn-craft.ru>
 description: Uses Experience as an Economy system.
 main: ${groupId}.${artifactId}
 name: ${artifactId}
-startup: postworld
+depend: [ProtocolLib]
 version: ${version}
