@@ -1,6 +1,6 @@
-author: Agnate
-description: EconomyXP uses Experience as an Economy system.
-main: ca.agnate.EconXP.EconXP
-name: EconXP
+author: Maxim Varentsov <admin@gtn-craft.ru>
+description: Uses Experience as an Economy system.
+main: ${groupId}.${artifactId}
+name: ${artifactId}
 startup: postworld
-version: 0.5.0
+version: ${version}
