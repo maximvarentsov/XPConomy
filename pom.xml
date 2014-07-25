@@ -2,14 +2,14 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>ru.gtncraft.xpconomy</groupId>
     <artifactId>XPConomy</artifactId>
-    <version>0.2</version>
+    <version>0.3</version>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
     <repositories>
         <repository>
-            <id>bukkit-repo</id>
-            <url>http://repo.bukkit.org/artifactory/repo</url>
+            <id>spigot-repo</id>
+            <url>http://repo.md-5.net/content/groups/public</url>
         </repository>
         <repository>
             <id>comphenix-rep</id>
@@ -42,9 +42,10 @@
     </build>
     <dependencies>
         <dependency>
-            <groupId>org.bukkit</groupId>
-            <artifactId>bukkit</artifactId>
-            <version>LATEST</version>
+            <groupId>org.spigotmc</groupId>
+            <artifactId>spigot-api</artifactId>
+            <version>1.7.10-R0.1-SNAPSHOT</version>
+            <scope>compile</scope>
         </dependency>
         <dependency>
             <groupId>com.comphenix.protocol</groupId>
