@@ -5,7 +5,9 @@ import org.bukkit.Bukkit;
 import org.bukkit.OfflinePlayer;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
+import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
+import org.bukkit.event.entity.PlayerDeathEvent;
 import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -30,6 +32,14 @@ public final class XPConomy extends JavaPlugin implements Listener {
         } catch (IOException ex) {
             ex.printStackTrace();
         }
+    }
+
+
+    @EventHandler(priority = EventPriority.HIGH)
+    @SuppressWarnings("unused")
+    void onPlayerDeath(final PlayerDeathEvent event) {
+        event.setKeepLevel(true);
+        event.setDroppedExp(0);
     }
 
     @Deprecated
